@@ -18,20 +18,22 @@ function MeetingListSentPage(props) {
             </tr>
           </thead>
           <tbody>
-            {meetingDeatils.map((data) => {
-              return (
-                <tr key={ShortID.generate()}>
-                  <td>{data.selectedTimeSlot}</td>
-                  <td>
-                    {data.name}
-                    <br />
-                    {data.description}
-                    <br />
-                    {data.selectedDate}
-                  </td>
-                </tr>
-              );
-            })}
+            {meetingDeatils !== undefined
+              ? meetingDeatils.map((data) => {
+                  return (
+                    <tr key={ShortID.generate()}>
+                      <td>{data.selectedTimeSlot}</td>
+                      <td>
+                        {data.name}
+                        <br />
+                        {data.description}
+                        <br />
+                        {data.selectedDate}
+                      </td>
+                    </tr>
+                  );
+                })
+              : null}
           </tbody>
         </table>
       </div>

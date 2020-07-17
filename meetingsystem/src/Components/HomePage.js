@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import {  useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { meetingSetup } from "../actions/meetingSetupActions";
 
 function HomePage(props) {
@@ -40,22 +40,24 @@ function HomePage(props) {
           </tr>
         </thead>
         <tbody>
-          {users.map((user) => {
-            return (
-              <tr key={user.id}>
-                <td>{user.name}</td>
+          {users !== undefined
+            ? users.map((user) => {
+                return (
+                  <tr key={user.id}>
+                    <td>{user.name}</td>
 
-                <td>
-                  <button
-                    onClick={() => meeteingHandler(user.name)}
-                    className="btn btn-outline-danger"
-                  >
-                    Meet
-                  </button>
-                </td>
-              </tr>
-            );
-          })}
+                    <td>
+                      <button
+                        onClick={() => meeteingHandler(user.name)}
+                        className="btn btn-outline-danger"
+                      >
+                        Meet
+                      </button>
+                    </td>
+                  </tr>
+                );
+              })
+            : null}
         </tbody>
       </table>
     </div>

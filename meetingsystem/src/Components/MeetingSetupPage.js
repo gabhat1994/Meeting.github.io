@@ -12,7 +12,7 @@ function MeetingSetupPage(props) {
   const [description, setDescription] = useState("");
   const [selectedTimeSlot, setSelectedTimeSlot] = useState("");
   const { name, date, time } = meeting;
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   const meeteingHandler = (date) => {
     setSelectedDate(date);
@@ -22,26 +22,23 @@ function MeetingSetupPage(props) {
     setSelectedTimeSlot(time);
     setShowForm(true);
   };
- const postBody=(name, selectedDate, selectedTimeSlot, description) =>{
-   let data ={
-   "name":name,
-   "selectedDate":selectedDate,
-   "selectedTimeSlot":selectedTimeSlot,
-   "description":description
-
-
-   }
-   return  data
-
- }
+  const postBody = (name, selectedDate, selectedTimeSlot, description) => {
+    let data = {
+      name: name,
+      selectedDate: selectedDate,
+      selectedTimeSlot: selectedTimeSlot,
+      description: description,
+    };
+    return data;
+  };
 
   const submitHandler = () => {
     setShowForm(false);
     setShow(false);
     setShowDate(false);
     setSuccess(true);
-    
-    let data = postBody(name, selectedDate, selectedTimeSlot, description)
+
+    let data = postBody(name, selectedDate, selectedTimeSlot, description);
 
     dispatch(meetingSent(data));
   };
@@ -49,7 +46,7 @@ function MeetingSetupPage(props) {
     <>
       <h1 style={{ textAlign: "center" }}>{name}'s Calender</h1>;
       <div>
-        {showDate === true
+        {showDate === true && date !== undefined
           ? date.map((date) => {
               return (
                 <button
@@ -65,7 +62,7 @@ function MeetingSetupPage(props) {
       </div>
       <br />
       <div className="col-sm-12">
-        {show === true
+        {show === true && time !== undefined
           ? time.map((time) => {
               return (
                 <button
