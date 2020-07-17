@@ -7,7 +7,7 @@ import HomePage from "./Components/HomePage";
 import PageNotFound from "./Components/PageNotFound";
 function App() {
   return (
-    <div className="container-fluid">
+    <div>
       <Header />
       <Switch>
         <Route exact path="/" exact={true} component={HomePage} />
