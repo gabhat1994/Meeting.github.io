@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import MeetingListSentPage from "./Components/MeetingListSentPage";
 import HomePage from "./Components/HomePage";
 import PageNotFound from "./Components/PageNotFound";
+import MeetingSetupPage from "./Components/MeetingSetupPage";
 function App() {
   return (
     <div>
@@ -12,6 +13,7 @@ function App() {
       <Switch>
         <Route exact path="/" exact={true} component={HomePage} />
         <Route path="/meetingsentlist" component={MeetingListSentPage} />
+        <Route path="/meetingSetup" component={MeetingSetupPage} />
         <Route component={PageNotFound} />
       </Switch>
     </div>

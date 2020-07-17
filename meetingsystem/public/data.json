@@ -1,0 +1,24 @@
+{
+  "users": [
+    { "id":1,
+      "name": "Manoj",
+      "designation": "Developer"
+    },
+    {"id":2,
+      "name": "Nirav",
+      "designation": "Tech Lead"
+    },
+    {"id":3,
+      "name": "Namdev",
+      "designation": "Frontend Developer"
+    },
+    {"id":4,
+      "name": "Vishal",
+      "designation": "Sales Head"
+    },
+    {"id":5,
+      "name": "Mayank",
+      "designation": "CTO"
+    }
+  ]
+}
