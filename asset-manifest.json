@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Meeting.github.io/static/css/main.fba8b3d9.chunk.css",
+    "main.js": "/Meeting.github.io/static/js/main.ddce5183.chunk.js",
+    "main.js.map": "/Meeting.github.io/static/js/main.ddce5183.chunk.js.map",
+    "runtime-main.js": "/Meeting.github.io/static/js/runtime-main.16fd3c32.js",
+    "runtime-main.js.map": "/Meeting.github.io/static/js/runtime-main.16fd3c32.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/Meeting.github.io/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.0c852f18.chunk.js": "/Meeting.github.io/static/js/2.0c852f18.chunk.js",
+    "static/js/2.0c852f18.chunk.js.map": "/Meeting.github.io/static/js/2.0c852f18.chunk.js.map",
+    "index.html": "/Meeting.github.io/index.html",
+    "precache-manifest.bdd92b490bae66bd3ca2781aa66f4581.js": "/Meeting.github.io/precache-manifest.bdd92b490bae66bd3ca2781aa66f4581.js",
+    "service-worker.js": "/Meeting.github.io/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/Meeting.github.io/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.fba8b3d9.chunk.css.map": "/Meeting.github.io/static/css/main.fba8b3d9.chunk.css.map",
+    "static/js/2.0c852f18.chunk.js.LICENSE.txt": "/Meeting.github.io/static/js/2.0c852f18.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.16fd3c32.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.0c852f18.chunk.js",
+    "static/css/main.fba8b3d9.chunk.css",
+    "static/js/main.ddce5183.chunk.js"
+  ]
+}
