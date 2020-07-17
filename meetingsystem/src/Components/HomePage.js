@@ -1,6 +1,6 @@
-import React, { Component, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useSelector, useDispatch } from "react-redux";
+import {  useDispatch } from "react-redux";
 import { meetingSetup } from "../actions/meetingSetupActions";
 
 function HomePage(props) {
@@ -21,7 +21,7 @@ function HomePage(props) {
   }, []);
 
   const meeteingHandler = (name) => {
-    if (name != null || name != "") {
+    if (name !== null || name !== "") {
       dispatch(meetingSetup(name, date, time));
       props.history.push("/meetingSetup");
     }
