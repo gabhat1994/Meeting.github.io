@@ -5,24 +5,26 @@ import { meetingSetup } from "../actions/meetingSetupActions";
 
 function HomePage(props) {
   const [users, setUsers] = useState([]);
+  const [date, setDate] = useState([]);
+  const [time, setTime] = useState([]);
   const dispatch = useDispatch();
 
   useEffect(() => {
     const fetchData = async () => {
       const { data } = await axios.get("./data.json");
       setUsers(data.users);
+      setDate(data.dateData);
+      setTime(data.timeData);
     };
 
     fetchData();
   }, []);
 
   const meeteingHandler = (name) => {
-      if(name != null || name != ""){
-        dispatch(meetingSetup(name));
-        props.history.push("/meetingSetup");
-
-      }
-  
+    if (name != null || name != "") {
+      dispatch(meetingSetup(name, date, time));
+      props.history.push("/meetingSetup");
+    }
   };
 
   return (

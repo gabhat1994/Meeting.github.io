@@ -1,24 +1,39 @@
 {
   "users": [
-    { "id":1,
-      "name": "Manoj",
-      "designation": "Developer"
-    },
-    {"id":2,
-      "name": "Nirav",
-      "designation": "Tech Lead"
-    },
-    {"id":3,
-      "name": "Namdev",
-      "designation": "Frontend Developer"
-    },
-    {"id":4,
-      "name": "Vishal",
-      "designation": "Sales Head"
-    },
-    {"id":5,
-      "name": "Mayank",
-      "designation": "CTO"
-    }
+    { "id": 1, "name": "Manoj", "designation": "Developer" },
+    { "id": 2, "name": "Nirav", "designation": "Tech Lead" },
+    { "id": 3, "name": "Namdev", "designation": "Frontend Developer" },
+    { "id": 4, "name": "Vishal", "designation": "Sales Head" },
+    { "id": 5, "name": "Mayank", "designation": "CTO" }
+  ],
+  "dateData": [
+    { "date": "17 Jul" },
+    { "date": "18 Jul" },
+    { "date": "19 Jul" },
+    { "date": "20 Jul" },
+    { "date": "21 Jul" },
+    { "date": "22 Jul" }
+  ],
+  "timeData": [
+    { "time": "07:00 AM" },
+    { "time": "07:15 AM" },
+    { "time": "07:30 AM" },
+    { "time": "07:45 AM" },
+    { "time": "08:00 AM" },
+    { "time": "08:15 AM" },
+    { "time": "08:30 AM" },
+    { "time": "08:45 AM" },
+    { "time": "09:00 AM" },
+    { "time": "09:15 AM" },
+    { "time": "09:30 AM" },
+    { "time": "09:45 AM" },
+    { "time": "10:00 AM" },
+    { "time": "10:15 AM" },
+    { "time": "10:30 AM" },
+    { "time": "10:45 AM" },
+    { "time": "11:00 AM" },
+    { "time": "11:15 AM" },
+    { "time": "11:30 AM" },
+    { "time": "11:45 AM" }
   ]
 }
